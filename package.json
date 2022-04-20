@@ -6,6 +6,7 @@
   "scripts": {
     "make-written": "npx sequelize-cli model:generate --name written --attributes title:string,author:string,description:text,context:text,content:text",
     "make-video": "npx sequelize-cli model:generate --name video --attributes title:string,author:string,description:text,context:text,link:string",
+    "make-note": "npx sequelize-cli model:generate --name note --attributes title:string,author:string,description:text,link:string",
     "undo-models": "npx sequelize-cli db:migrate:undo",
     "make-seed": "npx sequelize-cli seed:generate --name demo-written",
     "seed": "npx sequelize-cli db:seed:all",

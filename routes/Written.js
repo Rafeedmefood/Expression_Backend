@@ -4,7 +4,12 @@ const {written} = require("../models");
 
 
 router.get('/all', async (request, response) => {
-    const s = await written.findAll()
+    const writtenPieces = await written.findAll()
+    response.send(JSON.stringify(writtenPieces,null,2))
+})
+
+router.get('/:id', async (request, response) => {
+    const s = await written.findByPk(request.params.id)
     response.send(JSON.stringify(s,null,2))
 })
 
