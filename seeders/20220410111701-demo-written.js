@@ -5,7 +5,7 @@ module.exports = {
         await queryInterface.bulkInsert(
             'written', [
                 {
-                    id:1,
+                    id: 1,
                     title: 'Privilege',
                     author: 'Rafid Karim',
                     description: 'What is productivity, and what is my relationship to it? This is my first writing piece ever, and in it I explore these ideas.',
@@ -65,18 +65,9 @@ module.exports = {
                         '\n' +
                         'am not\n' +
                         '\n' +
-                        'and it hurts\n' +
-                        '\n' +
-                        'It is entitled and selfish for me \n' +
-                        'to say I am worth the wait \n' +
-                        'while you are under the spell of emotion and misinformation\n' +
-                        '\n' +
                         'for I am me\n' +
-                        'who offers nothing others cant\n' +
                         '\n' +
-                        'who doesn\'t live up to your perspective\n' +
-                        '\n' +
-                        'of whom you can do much better',
+                        'And I don\'t live up to your perspective\n',
                     created_at: new Date(),
                     updated_at: new Date()
                 }
@@ -84,12 +75,6 @@ module.exports = {
     },
 
     async down(queryInterface, Sequelize) {
-        /**
-         * Add commands to revert seed here.
-         *
-         * Example:
-         * await queryInterface.bulkDelete('People', null, {});
-         */
         await queryInterface.bulkDelete('written', null, {});
     }
 };
