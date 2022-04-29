@@ -7,7 +7,7 @@
     "make-written": "npx sequelize-cli model:generate --name written --attributes title:string,author:string,description:text,context:text,content:text",
     "make-video": "npx sequelize-cli model:generate --name video --attributes title:string,author:string,description:text,context:text,link:string",
     "make-note": "npx sequelize-cli model:generate --name note --attributes title:string,author:string,description:text,link:string",
-    "undo-models": "npx sequelize-cli db:migrate:undo",
+    "undo-models": "npx sequelize-cli db:migrate:undo:all",
     "migrate": "npx sequelize-cli db:migrate",
     "make-written-seed": "npx sequelize-cli seed:generate --name demo-written",
     "make-video-seed": "npx sequelize-cli seed:generate --name demo-videos",
@@ -21,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",

@@ -5,7 +5,6 @@ module.exports = {
         await queryInterface.bulkInsert(
             'note', [
                 {
-                    id: 1,
                     title: 'React: Basics',
                     author: 'Rafid Karim',
                     description: 'Addresses :\n' +
@@ -20,7 +19,6 @@ module.exports = {
                     updated_at: new Date()
                 },
                 {
-                    id: 2,
                     title: 'React: Components: Functional Components Intro',
                     author: 'Rafid Karim',
                     description: 'Addresses :\n' +
@@ -33,7 +31,6 @@ module.exports = {
                     updated_at: new Date()
                 },
                 {
-                    id: 3,
                     title: 'React: Components: Class Components Intro (CLASS COMPONENTS ARE OLD)',
                     author: 'Rafid Karim',
                     description: 'Addresses :\n' +
